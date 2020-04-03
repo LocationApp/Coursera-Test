@@ -1,0 +1,18 @@
+git clone <link>
+git status
+git checkout <branch>
+
+dir (show files in directory)
+cd <folder> (move to folder
+cd .. (move one folder hirarchy down)
+
+committing:
+git status
+git add . (add all files to be checked out)
+git commit -m "<comment>" (commit and comment)
+git push
+
+
+refreshing repo:
+git pull
+ 
