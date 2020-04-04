@@ -15,4 +15,8 @@ git push
 
 refreshing repo:
 git pull
+
+
+browser sync start
+browser-sync start --server --<git Folder> --files "*"
  
