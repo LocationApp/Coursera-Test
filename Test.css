@@ -1,0 +1,126 @@
+body {
+	font-family: Georgia, serif;
+	display: block;
+	margin: 5px;
+	padding: 5px;
+	border: 3px black solid;
+	
+
+	background-color: blue;
+	background-image: url("Homer.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+	
+
+	
+}
+/* 
+
+FLOAT
+float right/left
+other elements must clear left/right/both
+2 column layout: set width of each element to 50%;
+
+
+
+background-color: blue;
+background-image: url("Homerr.gif");
+background-repeat: no-repeat;
+background-position: center;
+
+or all in one background: url("") no-repeat center blue;
+
+box is consisting of content>padding>border>margin
+
+
+* selector is used to reset browser standard css settings
+for all elements.
+
+Also:
+box-sizing is not inherited, therefore 
+* is used to inherit it for any element*/
+* {box-sizing: border-box; 
+overflow: auto;}
+
+
+h1 {
+	color: red;
+	font-size: 20px;
+	width: 400px;
+	text-align: center;
+
+#yellow {
+	color: yellow;
+}
+
+div, .orange {
+	color: orange;
+}
+p.big {
+	font-size: 20px;
+}
+
+direct child selectior
+section > div {
+	color: blue;
+}
+decendant selector
+section p {
+	color: green;
+}
+
+/*color can be specified in hexadecimal as well*/
+.red {
+	color: red;
+	font-style: ARIAL;
+}
+.red.big {
+	color: red;
+	font-size: 40px;
+}
+
+/*header li specifies unordered list as table of content */ 
+header li {list-style: none;}
+
+a:link {color:blue;}
+a:visited {color:purple;
+border: 1px solid blue;
+display: block;}
+
+a:hover a:active {
+	background-color: red;}
+li:nth-child(3) {color:red;}
+li:nth-child(odd) {background-color: gray;}
+
+/* Pseudo Class selector
+:link
+:visited
+:hover
+:active
+:nth-child(...) */
+
+
+
+/*Media queries ensures different styles for 
+different devices
+1.define standard format in base styling
+2.define Standard for bigger devices:min width: 1200px
+3.define standard for smaller devices: min width: 992px AND max-width: 1199px;
+
+*/
+/*AND operator*/
+@media (min-width: 767px) and (max-width: 901px{
+p{
+color: blue;
+}
+}
+/*OR operator is equaivalent to "," */
+@media (min-width: 767px), (max-width: 901px{
+
+/*for mobile devices, html needs additional meta tag: 
+<meta name="viewport" content="width=device-width", initial-scale="1">
+
+*/
+
+
+/*twitter bootstrap is a 12 column layout which means 1 grid has 8,33 %*/
