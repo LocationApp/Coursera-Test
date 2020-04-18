@@ -17,6 +17,6 @@ refreshing repo:
 git pull
 
 
-browser sync start
-browser-sync start --server --<git Folder> --files "*"
+stating browser sync (watch all files in that and lower directory)
+browser-sync start --server --files "**/*"
  
